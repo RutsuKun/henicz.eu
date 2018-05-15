@@ -119,17 +119,16 @@ nav.nav__menu .menu__list .list__item .item__link {
 
 .section__hero {
 	font-family: "Open Sans",sans-serif;
-    background: linear-gradient(to bottom, #125080, #134b77);
+	background:#0e4671;
 }
 
 .section__about {
 	font-family: "Open Sans",sans-serif;
-	background: linear-gradient(to bottom, #134b77, #0f3654);
+	background:#0a263c;
 }
 
 .section__contact {
-	font-family: "Open Sans",sans-serif;
-	background: linear-gradient(to bottom, #0f3654, #0a2335);
+	background:#081825;
 }
 
 .section__hero__name {
@@ -170,14 +169,12 @@ nav.nav__menu .menu__list .list__item .item__link {
 .main__footer {
 	width:100%;
 	height:80px;
-
+	background:black;
 	font-size: 1.5em;
 	z-index:100;
 	line-height: 80px;
     font-weight: 500;
 	color:white;
-	
-	background: linear-gradient(to bottom, #0a2335, #000000);
 }
 
 .main__footer__container {
