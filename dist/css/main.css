@@ -49,6 +49,8 @@ table {
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 body {
+	line-height:1;
+	-webkit-text-size-adjust:none;
 	background: #fafaee;
     font-family: Montserrat,sans-serif;
 }
@@ -76,6 +78,19 @@ header.header {
     margin: 0 auto;
     padding: 0;
 }
+
+@media (max-width:1024px){
+	.header__container {
+		width:90vw;
+	}
+	.main__section__container {
+		width:90vw;
+	}
+	.main__section__container .section__desc {
+		padding:0 1vw
+	}
+}
+
 header.header .header__logo {
 	font-size:25px;
 	text-transform: uppercase;
@@ -98,7 +113,7 @@ nav.nav__menu .menu__list .list__item .item__link {
 }
 
 .main__section__container {
-	max-width: 1000px;
+	max-width: 1200px;
     margin-right: auto;
     margin-left: auto;
     position: relative;
@@ -129,6 +144,7 @@ nav.nav__menu .menu__list .list__item .item__link {
 
 .section__contact {
 	background:#081825;
+	text-align:center;
 }
 
 .section__hero__name {
@@ -168,22 +184,38 @@ nav.nav__menu .menu__list .list__item .item__link {
 
 .main__footer {
 	width:100%;
-	height:80px;
 	background:black;
 	font-size: 1.5em;
 	z-index:100;
-	line-height: 80px;
     font-weight: 500;
 	color:white;
 }
 
 .main__footer__container {
-    width: 100%;
+    width: 90%;
     height: 100%;
-    max-width: 1000px;
-	display: flex;
-    align-items: center;
-    justify-content: space-between;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 0;
+    padding:1vw 0;
+}
+
+.main_footer__item {
+	padding:1vw 0;
+}
+
+.main__footer a {
+	color:white;
+	border-bottom:2px solid white;
+}
+
+@media (max-width:768px){
+	.section__hero__name{
+		font-size:3em;
+	}
+	.section__hero__desc{
+		padding:0 1vw;
+	}
+	.main__footer{
+		font-size:1.2em;
+	}
 }
