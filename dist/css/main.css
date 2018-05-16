@@ -129,7 +129,7 @@ nav.nav__menu .menu__list .list__item .item__link {
 
 .main__section a {
 	color:white;
-	border-bottom:2px solid white;
+	text-decoration:none;
 }
 
 .section__hero {
@@ -145,6 +145,10 @@ nav.nav__menu .menu__list .list__item .item__link {
 .section__contact {
 	background:#081825;
 	text-align:center;
+}
+
+.section__contact a.fa{
+	font-size:55px;
 }
 
 .section__hero__name {
