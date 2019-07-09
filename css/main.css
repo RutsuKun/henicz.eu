@@ -1,0 +1,274 @@
+/* RESET CSS from http://webkod.pl */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin:0;
+  padding:0;
+  border:0;
+  font-size:100%;
+  font:inherit;
+  vertical-align:baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display:block;
+}
+
+body {
+  line-height:1;
+}
+
+a {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;
+	text-decoration:none;
+	color:white;
+}
+
+ul, ol {
+  list-style:none;
+}
+
+blockquote, q {
+  quotes:none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content:'';
+  content:none;
+}
+
+table {
+  border-collapse:collapse;
+  border-spacing:0;
+}
+
+/* END RESET CSS */
+
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+html {
+height:100%;
+ 
+}
+
+body {
+
+	color:white;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeSpeed;
+	display: flex;
+	align-items: center;
+height:100%;
+overflow:hidden;
+  font-family: 'Source Code Pro', monospace;
+  background: #000;
+}
+
+
+
+
+header, main {
+box-sizing:border-box;
+}
+
+.container {
+	padding: 0 20px;
+	width:800px;
+	max-width: 1500px;
+	margin: 0 auto;
+	opacity: 0;
+	animation-name: fadeIn;
+	-webkit-animation-duration: 0.8s;
+	animation-duration: 0.8s;
+	-webkit-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+	-webkit-animation-delay: 0.4s;
+	animation-delay: 0.4s;
+	z-index: 51;
+}
+
+.header {
+	width: fit-content;
+	position:relative;
+	display: inline-block;
+	display: table;
+	margin: 0 auto;
+}
+
+.line {
+width:100%;
+}
+
+.header .name {
+padding-left:20px;	
+padding-right:20px;	
+padding-top:10px;	
+padding-bottom:10px;
+letter-spacing: 6px;
+
+  font-size: 10vw;
+  font-weight: 900;
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  background-size: 120% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  -ms-background-clip: text;
+  -ms-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  background-image: linear-gradient(45deg, 
+                    #7794ff, 
+                    #44107A,
+                    #FF1361,
+                    #FFF800);
+  animation: .8s shake infinite alternate;
+}
+
+.menu {
+position:relative;
+text-align:center;
+margin-top:20px;
+}
+
+.menu .active{
+text-decoration:underline;
+}
+
+.menu p {
+font-size:25px;
+color:#FF1361;
+}
+
+.main .about {
+display: inline-block;
+width:100%;
+height:auto;
+padding-left:30px;	
+padding-right:30px;	
+padding-top:50px;	
+padding-bottom:50px;
+font-size:20px;
+margin-top:30px;
+text-align: justify;
+text-justify: inter-word;
+}
+
+.main .about a{
+color:#FF1361;
+}
+
+.footer {
+	width: 100%;
+	position:relative;
+	display: inline-block;
+	display: table;
+	margin: 0 auto;
+	text-align: center;
+}
+.footer .links a{
+color:white;	
+}
+
+.footer .links a:hover{
+text-decoration:underline;	
+}
+
+.footer .links {
+display: inline-block; 
+width:100%;
+height:auto;
+padding-top:20px;	
+padding-bottom:20px;
+font-size:20px;
+}
+
+.languages {
+	position:fixed;
+	right:0;
+	top:0;
+	padding:10px;
+	z-index: 52;
+	border-left:2px solid white;
+	border-bottom:2px solid white;
+	opacity: 0;
+	animation-name: fadeIn;
+	-webkit-animation-duration: 0.8s;
+	animation-duration: 0.8s;
+	-webkit-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+	-webkit-animation-delay: 0.4s;
+	animation-delay: 0.4s;
+}
+
+.languages .active{
+	text-decoration:underline;
+}
+/* Animations */
+@-webkit-keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@media screen and (max-width: 800px){
+.container {
+padding:0;
+}
+
+.header .name {
+margin-left:0;
+margin-top:0;
+}
+
+.header .desc {
+margin-left:0;
+}
+
+.main .about {
+width:fit-content;
+}
+
+.footer {
+width:fit-content;
+}
+
+.line {
+width:100%;
+text-align:center;
+}
+
+.languages {
+box-sizing:border-box;
+	position:fixed;
+	right:0;
+	top:0;
+	padding:5px;
+	z-index: 52;
+border-left:0;
+	border-bottom:2px solid white;
+text-align:center;
+width:100%;
+}
+
+}
+
+@keyframes shake {
+  0% { transform: skewX(-15deg); }
+  5% { transform: skewX(15deg); }
+  10% { transform: skewX(-15deg); }
+  15% { transform: skewX(15deg); }
+  20% { transform: skewX(0deg); }
+  100% { transform: skewX(0deg); }  
+}
